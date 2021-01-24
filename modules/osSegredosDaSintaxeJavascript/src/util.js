@@ -6,8 +6,12 @@ class Util {
    })
 
    static formatCurrency(value) {
-      console.log(value);
       return this.#defaultFormat.format(value)
+   }
+
+   static unFormatCurrency(value) {
+      return Number(value.replace(/\D/g, '')) / 100
+     
    }
 }
 
