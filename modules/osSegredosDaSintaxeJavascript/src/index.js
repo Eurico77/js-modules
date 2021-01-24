@@ -69,6 +69,14 @@ Date.prototype.getFullYear = () => CURRENT_YEAR
    assert.deepStrictEqual(manager.birthYear, 2003)
    assert.deepStrictEqual(manager.grossPay, Util.formatCurrency(5000.40))
    assert.deepStrictEqual(manager.bonuses, Util.formatCurrency(2000))
+   assert.deepStrictEqual(manager.netPay, Util.formatCurrency(6000.32))
 
+
+   console.log('\n ----manager----');
+   console.log('manager.name', manager.name)
+   console.log('manager.age', manager.age)
+   console.log('manager.gender', manager.gender)
+   console.log('manager.grossPay', manager.grossPay)
+   console.log('manager.netPay', manager.netPay)
 
 }
